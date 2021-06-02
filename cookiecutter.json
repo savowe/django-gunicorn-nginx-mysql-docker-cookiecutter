@@ -1,0 +1,6 @@
+{
+    "project_name": "django_project",
+    "secret_key": "=b2rx%#k!d!$z_xhswhn763-j2ufx*5gs7!@^q1)sq#$#p(q%q",
+    "mysql_password": "example_password",
+    "nginx_http_port": "8080"
+}

@@ -1,0 +1,5 @@
+Django>=3.2.3
+gunicorn
+lxml
+mysqlclient
+python-dotenv>=0.15.0
