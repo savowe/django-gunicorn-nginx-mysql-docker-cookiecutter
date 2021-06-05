@@ -82,7 +82,7 @@ DATABASES = {
         'NAME': 'django',
         'USER': 'djangouser',
         'PASSWORD': str(os.getenv('MYSQL_PASSWORD')),
-        'HOST': 'db',
+        'HOST': 'django_database',
         'PORT': '3306',
         'OPTIONS': {
             'charset': 'utf8mb4',
