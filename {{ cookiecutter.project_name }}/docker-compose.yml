@@ -26,11 +26,12 @@ services:
         ports:
         - "127.0.0.1:${NGINX_PORT}:80"
         depends_on:
-        - django
+            - django
+        command: ["./wait-for-it.sh", "django:8000", "-s", "--", "./docker-entrypoint.sh", "nginx", "-g", "daemon off;"]
         volumes:
         - ./docker/nginx/config:/etc/nginx/conf.d:ro
-        - ./static:/static
-        - ./media:/media
+        - ./static:/static:ro
+        - ./media:/media:ro
     django:
         user: djangouser
         image: "python:${PROJECT_NAME}"
